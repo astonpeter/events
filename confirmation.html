@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #60bae3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+      padding-top: 80px;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 90%;
+      max-width: 400px;
+      background-color: #ffffff;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .check-icon {
+      font-size: 72px;
+      color: #28a745; /* classy green */
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0;
+      color: #2e3c84;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+      color: #3a5596;
+      margin: 0;
+    }
+    .btn-home {
+      background-color: #4988bc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .btn-home:hover {
+      background-color: #3a5596;
+    }
+    .footer {
+      margin-top: auto;
+      width: 100%;
+      background-color: #744991;
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    .footer button {
+      background-color: #a6599c;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .footer button:hover {
+      background-color: #3d3c8c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="check-icon">&#10004;</div> <!-- Unicode checkmark -->
+    <h1>Thank You!</h1>
+    <p>Thank you for submitting. We look forward to seeing you at the wedding!</p>
+    <a href="index.html" class="btn-home">Back to Home</a>
+  </div>
+
+  <div class="footer">
+    <span>Powered by TapIt</span>
+    <button>Details</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP Decline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #60bae3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      margin-top: 80px;
+      width: 90%;
+      max-width: 400px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+    h1 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: #2e3c84;
+    }
+    p {
+      font-size: 14px;
+      color: #2e3c84;
+      margin-bottom: 16px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    .button {
+      display: block;
+      width: calc(100% - 24px);
+      padding: 12px;
+      margin: 16px 12px;
+      background-color: #4988bc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .button:hover {
+      background-color: #3a5596;
+    }
+    .footer {
+      margin-top: auto;
+      width: 100%;
+      background-color: #744991;
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+    }
+    .footer button {
+      background-color: #a6599c;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .footer button:hover {
+      background-color: #3d3c8c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Anna & John</h1>
+    <p>If you wish to inform the bride and groom that you are unable to attend their event you may type an optional message and press the decline button</p>
+    <form action="confirmation.html" method="post">
+      <textarea name="message" placeholder="Write your message here..."></textarea>
+      <button class="button" onclick="window.location.href='confirmation.html'">Decline</button>
+    </form>
+  </div>
+  <div class="footer">
+    <span>Powered by TapIt</span>
+    <button>Details</button>
+  </div>
+</body>
+</html>
